@@ -1,0 +1,12 @@
++++
+title = "2PAC: Two Point Attractors for Center of Mass Trajectories in Multi Contact Scenarios"
+date = 2018-07-01
+authors = ["Steve Tonneau", "Pierre Fernbach", "Andrea Del Prete", "Julien Pettré", "Nicolas Mansard"]
+publication_types = ["2"]
+abstract = "Synthesizing motions for legged characters in arbitrary environments is a long-standing problem that has recently received a lot of attention from the computer graphics community. We tackle this problem with a procedural approach that is generic, fully automatic and independent from motion capture data. The main contribution of this paper is a point-mass-model-based method to synthesize Center Of Mass trajectories. These trajectories are then used to generate the whole-body motion of the character. The use of a point mass model often results in physically inconsistent motions and joint limit violations. We mitigate these issues through the use of a novel formulation of the kinematic constraints which allows us to generate a quasi-static Center Of Mass trajectory, in a way that is both user-friendly and computationally efficient. We also show that the quasi-static constraint can be relaxed to generate motions usable for applications of computer graphics (on average 83% of a given trajectory remain physically consistent). Our method was integrated in our open-source contact planner and tested with different scenarios-some never addressed before-featuring legged characters performing non-gaited motions in cluttered environments. The computational efficiency of our trajectory generation algorithm (under ten ms to compute one second of motion) enables us to synthesize motions in a few seconds, one order of magnitude faster than state-of-the-art methods. "
+selected = "false"
+publication = "*Transaction on Graphics*"
+url_pdf = "https://hal.archives-ouvertes.fr/hal-01609055"
+url_video = "https://www.youtube.com/watch?v=PvOoMSlKoxE"
++++
+

@@ -10,31 +10,34 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Robotics",
+    "Motion Planning",
+    "Contact planning",
+    "Humanoid/legged robots",
+    "Multi-contact locomotion",
+    "Optimization"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "PhD in robotics"
+  institution = "LAAS-CNRS - Université Paul Sabatier, Toulouse, France"
+  year = 2018
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
+  course = "MEng in Robotics and artificial intelligence"
+  institution = "Université Paul Sabatier, Toulouse, France"
+  year = 2015
 
 [[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
+  course = "BSc in Electronic and Automation"
+  institution = "Université Paul Sabatier, Toulouse, France"
+  year = 2013
  
 +++
 
 # Biography
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+My name is Pierre Fernbach, I have a PhD in robotic and I am currently in a postdoctoral research position at the LAAS-CNRS lab, in the [GEPETTO team](http://projects.laas.fr/gepetto/index.php). 
+My research interest focus on motion and contact planning for locomotion of legged robots in multi-contact scenario. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 

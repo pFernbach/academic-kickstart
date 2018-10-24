@@ -1,0 +1,127 @@
+@inproceedings{fernbach17,
+  TITLE = {{A Kinodynamic steering-method for legged multi-contact locomotion}},
+  AUTHOR = {Fernbach, Pierre and Tonneau, Steve and Del Prete, Andrea and Ta\"ix, Michel},
+  URL = {https://hal.laas.fr/hal-01486933},
+  BOOKTITLE = {IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  ADDRESS = {Vancouver, Canada},
+  HAL_LOCAL_REFERENCE = {Rapport LAAS n{\textdegree} 17054},
+  PAGES = {7p.},
+  YEAR = {2017},
+  MONTH = {Sep},
+  KEYWORDS = { kinodynamic ;  legged robot ;  humanoid robot ; Robotic ;  motion planning ;  dynamic equilibrium},
+  HAL_ID = {hal-01486933},
+  HAL_VERSION = {v2},
+  ABSTRACT = {We present a novel method for synthesizing collision-free, dynamic locomotion behaviors for legged robots, including jumping, going down a very steep slope, or recovering from a push using the arms of the robot. The approach is automatic and generic: non-gaited motions, comprising arbitrary contact postures can be generated along any environment. At the core of our framework is a new steering method that generates trajectories connecting two states of the robot. These trajectories account for the state-dependent, centroidal dynamic constraints inherent to legged robots. The method, of low dimension, formulated as a Linear Program, is really efficient to compute, and can find an application in various problems related to legged locomotion. By incorporating this steering method into an existing sampling-based contact planner, we propose the first kinodynamic contact planner for legged robots. },
+}
+
+
+@INPROCEEDINGS{fernbach18,
+  TITLE = {{CROC: Convex Resolution Of Centroidal dynamics trajectories to provide a feasibility criterion for the multi contact planning problem}},
+  AUTHOR = {Fernbach, Pierre and Tonneau, Steve and Ta\"ix, Michel},
+  booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  URL = {https://hal.archives-ouvertes.fr/hal-01726155},
+  YEAR = {2018},
+  MONTH = {October},
+  PDF = {https://hal.archives-ouvertes.fr/hal-01726155/file/IROS18_CROC_V1_1.pdf},
+  HAL_ID = {hal-01726155},
+  HAL_VERSION = {v2},
+  ABSTRACT = { We present a novel method for computing centroidal dynamic trajectories in multi-contact planning context. With dynamic motion it is necessary to respect kinematic and dynamic constraints during the contact planning step. Verifying the feasibility of a transition between contacts increase the success rate of the motion generation along the planned contacts. Our approach is based on a conservative but convex reformulation of the problem where we represent the center of mass trajectory as a Bezier curve, with control points constrained by the initial and final states and one free control point. Thanks to the convexity of this formulation, we can solve it efficiently with a Linear Program of low dimension. We use this LP as a feasibility criterion to test the contact transition candidates during multi-contact planning. By incorporating this criterion in an existing sampling-based contact planner, we are able to produce more robust contact sequences. We illustrate this application on various multi-contact scenarios. We also show that we can compute valuable initial guess, used to warm-start non-linear solvers for motion generation methods. This method could also be used for the 0 and 1-Step capturability problem. },
+}
+
+@unpublished{fernbach18CCROC,
+  TITLE = {{C-CROC: Continuous and Convex Resolution of Centroidal dynamic trajectories for legged robots in multi-contact scenarios}},
+  AUTHOR = {Fernbach, Pierre and Tonneau, Steve and Stasse, Olivier and Carpentier, Justin and Ta\"ix, Michel},
+  URL = {https://hal.laas.fr/hal-01894869},
+  NOTE = {working paper or preprint},
+  YEAR = {2018},
+  MONTH = {Oct},
+  KEYWORDS = {Multi contact locomotion ; centroidal dynamics ; Humanoid robots ; legged robots ; Motion planning},
+  PDF = {https://hal.laas.fr/hal-01894869/file/tro18fernach.pdf},
+  HAL_ID = {hal-01894869},
+  HAL_VERSION = {v1},
+  ABSTRACT = {Synthesizing legged locomotion requires planning one or several steps ahead (literally): when and where, and with which effector should the next contact(s) be created between the robot and the environment? Validating a contact candidate implies \textit{a minima} the resolution of a slow, non-linear optimization problem, to demonstrate that a Center Of Mass (COM) trajectory, compatible with the contact transition constraints, exists. We propose a conservative reformulation of this trajectory generation problem as a convex 3D linear program, CROC. It results from the observation that if the COM trajectory is a polynomial with only one free variable coefficient, the non-linearity of the problem disappears. This has two consequences. On the positive side, in terms of computation times CROC outperforms the state of the art by at least one order of magnitude, and allows to consider interactive applications (with a planning time roughly equal to the motion time). On the negative side, in our experiments our approach finds a majority of the feasible trajectories found by a non-linear solver, but not all of them. Still, we demonstrate that the solution space covered by CROC is large enough to achieve the automated planning of a large variety of locomotion tasks for different robots, demonstrated in simulation and on the real HRP-2 robot, several of which were rarely seen before. Another significant contribution is the introduction of a Bezier curve representation of the problem, which guarantees that the constraints of the COM trajectory are verified continuously, and not only at discrete points as traditionally done. This formulation is lossless, and results in more robust trajectories. It is not restricted to CROC, but could rather be integrated with any method from the state of the art. },
+}
+
+
+
+@article{tonneau2PAC,
+  TITLE = {{2PAC: Two Point Attractors for Center of Mass Trajectories in Multi Contact Scenarios}},
+  AUTHOR = {Steve Tonneau  and Pierre Fernbach and Andrea Del Prete  and Julien Pettr\'e  and Nicolas Mansard},
+  journal = {Transaction on Graphics},
+  YEAR = {2018},
+  MONTH = {Jul},
+  URL = {https://hal.archives-ouvertes.fr/hal-01609055},
+  ABSTRACT = {Synthesizing motions for legged characters in arbitrary environments is a long-standing problem that has recently received a lot of attention from the computer graphics community. We tackle this problem with a procedural approach that is generic, fully automatic and independent from motion capture data. The main contribution of this paper is a point-mass-model-based method to synthesize Center Of Mass trajectories. These trajectories are then used to generate the whole-body motion of the character. The use of a point mass model often results in physically inconsistent motions and joint limit violations. We mitigate these issues through the use of a novel formulation of the kinematic constraints which allows us to generate a quasi-static Center Of Mass trajectory, in a way that is both user-friendly and computationally efficient. We also show that the quasi-static constraint can be relaxed to generate motions usable for applications of computer graphics (on average 83\% of a given trajectory remain physically consistent). Our method was integrated in our open-source contact planner and tested with different scenarios-some never addressed before-featuring legged characters performing non-gaited motions in cluttered environments. The computational efficiency of our trajectory generation algorithm (under ten ms to compute one second of motion) enables us to synthesize motions in a few seconds, one order of magnitude faster than state-of-the-art methods. },
+}
+
+
+
+
+@inproceedings{mirabel16,
+  TITLE = {{HPP: a new software for constrained motion planning}},
+  AUTHOR = {Mirabel, Joseph and Tonneau, Steve and Fernbach, Pierre and Sepp\"al\"a, Anna-Kaarina and Campana, Myl\`ene and Mansard, Nicolas and Lamiraux, Florent},
+  URL = {https://hal.archives-ouvertes.fr/hal-01290850},
+  BOOKTITLE = {International Conference on Intelligent Robots and Systems (IROS 2016)},
+  ADDRESS = {Daejeon, South Korea},
+  HAL_LOCAL_REFERENCE = {Rapport LAAS n{\textdegree} 16070},
+  YEAR = {2016},
+  MONTH = {Oct},
+  KEYWORDS = {manipulation ; legged robotics ; motion planning software},
+  PDF = {https://hal.archives-ouvertes.fr/hal-01290850/file/output.pdf},
+  HAL_ID = {hal-01290850},
+  HAL_VERSION = {v2},
+  ABSTRACT={We present HPP, a software designed for complex classes of motion planning problems, such as navigation among movable objects, manipulation, contact-rich multiped locomotion, or elastic rods in cluttered environments. HPP is an open-source answer to the lack of a standard framework for these important issues for robotics and graphics communities. HPP adopts a clear object oriented architecture, which makes it easy to implement parts of an existing planning algorithm, or entirely new algorithms. Python bindings and a visualization tool allow for fast problem setting and prototyping: a new algorithm can be implemented in just a few lines of code. HPP can be used for classic planning problems such as pick and place for mobile robots, but is specifically designed to solve problems where the motion of the robot is constrained. Examples of behaviors produced by HPP thanks to a generic constraint formulation include: maintaining a relative orientation between bodies, enforcing the static equilibrium of the robot, or automatically inferring that an object must be moved to allow locomotion. Constraints are tied to a custom representation of the kinematic chain, compatible with the Unified Robot Description format (URDF). To illustrate the possibilities of HPP, we present several recent scientific contributions implemented with HPP, most of which are provided with Python tutorials. HPP aims at being seamlessly integrated within a global robot control loop: Pinocchio, the fast multi-body dynamics library, is currently being integrated in HPP, thus bridging the gap between the planning and control communities.},
+}
+
+
+@inproceedings{carpentier17,
+  TITLE = {{Multi-contact Locomotion of Legged Robots in Complex Environments -- The Loco3D project}},
+  AUTHOR = {Carpentier, Justin and Del Prete, Andrea and Tonneau, Steve and Flayols, Thomas and Forget, Florent and Mifsud, Alexis and Giraud, Kevin and Atchuthan, Dinesh and Fernbach, Pierre and Budhiraja, Rohan and Geisert, Mathieu  and Sol\`a, Joan and Stasse, Olivier and Mansard, Nicolas},
+  URL = {https://hal.laas.fr/hal-01543060},
+  BOOKTITLE = {RSS Workshop on Challenges in Dynamic Legged Locomotion},
+  ADDRESS = {Boston, United States},
+  HAL_LOCAL_REFERENCE = {Rapport LAAS n{\textdegree} 17206},
+  PAGES = {3p.},
+  YEAR = {2017},
+  MONTH = {Jul},
+  PDF = {https://hal.laas.fr/hal-01543060/file/loco3d.pdf},
+  HAL_ID = {hal-01543060},
+  HAL_VERSION = {v1},
+  ABSTRACT = {Planning, adapting and executing multi-contact locomotion movements on legged robots in complex environments remains an open problem. In this proposal, we introduce a complete pipeline to address this issue in the context of humanoid robots inside industrial environments. This pipeline relies on a multi-stage approach in order to simplify the process flow and to exploit at best state-of-the-art techniques both in terms of contact planning, whole-body control and perception. The main challenges lie in the choice of the different modules composing this pipeline as well as their mutual interactions: e.g. at which frequency rates each module has to work in order to allow safe and robust locomotion? or which information must transit between the modules? We named this project Loco3D standing for Locomotion in 3D, in contrast to the classic locomotion on quasi-flat terrains, where the motion of the center of mass of the robot is mostly limited to a 2D plane. },
+}
+
+@inproceedings{campana16,
+  TITLE = {{Ballistic motion planning for jumping superheroes}},
+  AUTHOR = {Campana, Myl\`ene and Fernbach, Pierre and Tonneau, Steve and Ta\"ix, Michel and Laumond, Jean-Paul},
+  URL = {https://hal.archives-ouvertes.fr/hal-01366796},
+  BOOKTITLE = {Motion in Games Conference},
+  ADDRESS = {Burlingame, CA, United States},
+  YEAR = {2016},
+  MONTH = {Oct},
+  DOI = {10.1145/2994258.2994279},
+  KEYWORDS = {ballistic trajectory ; jump ; motion planning ; animation},
+  PDF = {https://hal.archives-ouvertes.fr/hal-01366796/file/paper.pdf},
+  HAL_ID = {hal-01366796},
+  HAL_VERSION = {v1},
+  ABSTRACT = { We present a framework capable of automatically planning and animating dynamic multi-contact jumping trajectories for arbitrary legged characters and environments. Our contribution is the introduction of an approximate yet efficient multi-contact impulse formulation, used at the motion planning phase. We combine this criterion with a heuristic for estimating the contact locations without explicitly computing them, which breaks the combinatorial aspect of contact generation. This low dimensional formulation is used to efficiently extend an existing ballistic motion planner to legged characters. We then propose a procedural method to animate the planned trajectory. Our approach thus results from a trade-off between accuracy of the law of physics and computational efficiency. We empirically justify this approach by demonstrating a large variety of behaviors for four legged characters in five scenarios. },
+}
+
+
+
+@inproceedings{pencole15,
+  TITLE = {{Modular fault diagnosis in discrete-event systems with a CPN diagnoser}},
+  AUTHOR = {Pencol\'e, Yannick and Pichard, Romain and Fernbach, Pierre},
+  URL = {https://hal.archives-ouvertes.fr/hal-01196011},
+  BOOKTITLE = {9th IFAC Symposium on Fault Detection, Supervision and Safety for Technical Processes},
+  ADDRESS = {Paris, France},
+  HAL_LOCAL_REFERENCE = {Rapport LAAS n{\textdegree} 15314},
+  SERIES = {9th IFAC Symposium on Fault Detection, Supervision and Safety for Technical Processes},
+  YEAR = {2015},
+  MONTH = {Sep},
+  KEYWORDS = {Encoding ; Supervision ; Petri-nets ; Discrete-event System ; Diagnosis},
+  PDF = {https://hal.archives-ouvertes.fr/hal-01196011/file/safe15.pdf},
+  HAL_ID = {hal-01196011},
+  HAL_VERSION = {v1},
+  ABSTRACT = {This paper addresses the problem of fault diagnosis in discrete-event system. The system under investigation is modelled as a labelled Petri net. We first propose an equivalent encoding of the classical diagnoser with the help of a CPN diagnoser. We then apply this encoding to define a modular CPN diagnoser. },
+}
+
