@@ -161,7 +161,7 @@ enableGitInfo = true
   # highlight_style = "github"
 
   # Enable native social sharing buttons?
-  sharing = true
+  sharing = false
 
   # Privacy pack
   #   Show a cookie consent message to visitors
@@ -200,6 +200,7 @@ enableGitInfo = true
     # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
     #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
     date_format = "January, 2006"
+    share = "false"
 
   # Configuration of project pages.
   [params.projects]
@@ -292,7 +293,7 @@ enableGitInfo = true
 
 [[menu.main]]
   name = "Publications"
-  url = "#publications_selected"
+  url = "#publications"
   weight = 4
 
 #[[menu.main]]

@@ -7,6 +7,7 @@ abstract = "This paper addresses the problem of fault diagnosis in discrete-even
 selected = "false"
 publication = "*9th IFAC Symposium on Fault Detection, Supervision and Safety for Technical Processes*"
 tags = ["Encoding ; Supervision ; Petri-nets ; Discrete-event System ; Diagnosis"]
-url_pdf = "https://hal.archives-ouvertes.fr/hal-01196011"
+url_custom = [{name = "View on HAL", url = "https://hal.laas.fr/hal-01196011"}]
+url_pdf = "https://hal.archives-ouvertes.fr/hal-01196011/document"
 +++
 

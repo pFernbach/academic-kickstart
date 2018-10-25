@@ -7,6 +7,7 @@ abstract = "We present HPP, a software designed for complex classes of motion pl
 selected = "false"
 publication = "*International Conference on Intelligent Robots and Systems (IROS 2016)*"
 tags = ["manipulation ; legged robotics ; motion planning software"]
-url_pdf = "https://hal.archives-ouvertes.fr/hal-01290850"
+url_custom = [{name = "View on HAL", url = "https://hal.laas.fr/hal-01290850"}]
+url_pdf = "https://hal.archives-ouvertes.fr/hal-01290850/document"
 +++
 

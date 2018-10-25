@@ -7,6 +7,7 @@ abstract = " We present a framework capable of automatically planning and animat
 selected = "false"
 publication = "*Motion in Games Conference*"
 tags = ["ballistic trajectory ; jump ; motion planning ; animation"]
-url_pdf = "https://hal.archives-ouvertes.fr/hal-01366796"
+url_custom = [{name = "View on HAL", url = "https://hal.laas.fr/hal-01366796"}]
+url_pdf = "https://hal.archives-ouvertes.fr/hal-01366796/document"
 +++
 

@@ -7,7 +7,8 @@ abstract = "We present a novel method for synthesizing collision-free, dynamic l
 selected = "false"
 publication = "*IEEE/RSJ International Conference on Intelligent Robots and Systems*"
 tags = ["kinodynamic ;  legged robot ;  humanoid robot ; Robotic ;  motion planning ;  dynamic equilibrium"]
-url_pdf = "https://hal.laas.fr/hal-01486933"
+url_custom = [{name = "View on HAL", url = "https://hal.laas.fr/hal-01486933"}]
+url_pdf = "https://hal.laas.fr/hal-01486933/document"
 url_video = "https://youtu.be/dEda80-sF6U"
 +++
-
+{{< youtube dEda80-sF6U >}}
