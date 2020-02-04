@@ -62,7 +62,7 @@ enableGitInfo = true
   avatar = "photoCV.JPG"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
-  email = "pierre.fernbach@laas.fr"
+  email = "pierre.fernbach@gmail.com"
 
   # Discussion link (e.g. link to a forum, mailing list, or chat).
   #   Uncomment line below to use.
@@ -242,7 +242,7 @@ enableGitInfo = true
   [[params.social]]
     icon = "envelope"
     icon_pack = "fas"
-    link = "mailto:pierre.fernbach@laas.fr"
+    link = "mailto:pierre.fernbach@gmail.com"
 
   [[params.social]]
     icon = "google-scholar"
